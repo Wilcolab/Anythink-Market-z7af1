@@ -10,4 +10,19 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Install Docker either using binaries or with Docker Desktop:
+
+[https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+
+2. Clone the repository:
+
+```sh
+git clone <enter_git_repo>
+```
+
+3. Start the application, along with the database using `docker compose up`.
+
+4. Verify the backend is working by going to [http://localhost:3000/api/ping](http://localhost:3000/api/ping).
+You should see some JSON coming back that looks something like: `{"msg":"Pong! Seems like Everythink is working, great job!"}`
+
+5. Verify the frontend is working by going to [http://localhost:3001](http://localhost:3001). You should see a webpage with sign up form.
